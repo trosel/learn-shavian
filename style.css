@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Henry Higgins Sans';
+    src: url('HenryHigginsSans-Regular.woff2') format('woff2'),
+        url('HenryHigginsSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+	--nc-font-sans: 'Henry Higgins Sans'
+}
