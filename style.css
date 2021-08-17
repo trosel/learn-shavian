@@ -10,3 +10,7 @@
 :root {
 	--nc-font-sans: 'Henry Higgins Sans'
 }
+
+table {
+    table-layout: fixed;
+}
