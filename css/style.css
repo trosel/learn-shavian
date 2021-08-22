@@ -11,6 +11,17 @@
 	--nc-font-sans: 'Henry Higgins Sans'
 }
 
+.github-corner {
+    fill: var(--nc-tx-1);
+    color: var(--nc-bg-1);
+}
+
 table {
     word-break: keep-all;
+}
+
+#title-text {
+    max-height: 170px;
+    margin-top:20px;
+    margin-bottom: 0px;
 }
