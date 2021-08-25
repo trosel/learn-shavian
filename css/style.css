@@ -7,8 +7,17 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Fairfax HD';
+    src: url('/fonts/FairfaxHD.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
 	--nc-font-sans: 'Henry Higgins Sans';
+    --nc-font-mono: 'Fairfax HD';
     --nc-ac-1: #9BDEB0;
 }
 
