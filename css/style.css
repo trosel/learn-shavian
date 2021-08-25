@@ -8,7 +8,8 @@
 }
 
 :root {
-	--nc-font-sans: 'Henry Higgins Sans'
+	--nc-font-sans: 'Henry Higgins Sans';
+    --nc-ac-1: #9BDEB0;
 }
 
 .github-corner {
