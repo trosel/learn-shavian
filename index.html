@@ -125,7 +125,7 @@
                     return response.text();
                     document.getElementById('chapterText').innerHTML = `<p>${response.text()}</p><p>Lesson coming soon!</p>`;
                 }).then(function(file_content) {
-                    document.getElementById('chapterText').innerHTML = marked(file_content);
+                    document.getElementById('chapterText').innerHTML = marked.parse(file_content);
                     tippy('[data-tippy-content]', {
                         inlinePositioning: true,
                         interactive: true,
