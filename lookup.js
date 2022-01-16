@@ -37,7 +37,7 @@ function debounce(func, delay) {
 function lookup() {
     
     var s = document.getSelection().toString().trim().toLowerCase();
-    var punctuationless = s.replace(/[.,\/#!$?%\^&\*;:{}=_`~()"]/g,"");
+    var punctuationless = s.replace(/[·.,\/#!$?%\^&\*;:{}=_`~()"]/g,"");
     var cleaned = punctuationless.replace(/\s{2,}/g," ");
     var selection = cleaned.split(' ');
 

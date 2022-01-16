@@ -52,6 +52,7 @@ table {
 
 #definition p {
     color: var(--nc-bg-1);
+    font-size: 1em;
 }
 
 #definition h4 {
