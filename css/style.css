@@ -35,3 +35,25 @@ table {
     margin-top:20px;
     margin-bottom: 0px;
 }
+
+#definition {
+    display: none;
+    max-width: 70%;
+    max-height: 30%;
+    overflow-y: auto;
+    padding: 20px;
+    color: var(--nc-bg-1);
+    background-color: var(--nc-tx-1);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#definition p {
+    color: var(--nc-bg-1);
+}
+
+#definition h4 {
+    color: var(--nc-bg-1);
+}
