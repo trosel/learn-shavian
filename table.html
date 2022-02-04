@@ -1,12 +1,7 @@
 <html>
   <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NBBK7FD');</script>
-    <!-- End Google Tag Manager -->
+    <!-- Counter.Dev Analytics -->
+    <script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"octogon",utcoffset:"-7"}))};sessionStorage.setItem("_swa","1");</script>
     
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -64,15 +59,13 @@
 
   function buildTable(data) {
     var table = document.getElementById("alphabetTable");
-    var tableHTML = `<thead>
+    var tableHTML = `<table  class="sortable"><thead>
         <tr>
           <th>Type</th>
           <th>Letter</th>
           <th>IPA Sound</th>
-          <th>Name in Latin</th>
-          <th>Name in Shavian</th>
-          <th>Name in IPA</th>
-          <th>Audio</th>
+          <th>Name</th>
+          <th>Pronunciation</th>
           <th>Frequency (1=highest)</th>
         </tr>
       </thead><tbody>`;
@@ -81,10 +74,8 @@
           <td>${data[letter]['Type']}</td>
           <td>${letter}</td>
           <td>${data[letter]['IPA Sound']}</td>
-          <td>${data[letter]['Name in Latin']}</td>
-          <td>${data[letter]['Name in Shavian']}</td>
-          <td>${data[letter]['Name in IPA']}</td>
-          <td><audio src="./audio/${data[letter]['Name in Latin']}.mp3">Your browser does not support the <code>audio</code> element.</audio></td>
+          <td>${data[letter]['Name in Latin']} / ${data[letter]['Name in Shavian']} / ${data[letter]['Name in IPA']}</td>
+          <td><audio controls src="./audio/${data[letter]['Name in Latin']}.mp3">Your browser does not support the <code>audio</code> element.</audio></td>
           <td>14</td>
         </tr>`;
       console.log(letter);
@@ -96,7 +87,8 @@
 </script>
 
 <h2 id="alphabet"><a href="#alphabet">Whole Alphabet Table<a></h2>
-<table id="alphabetTable" class="sortable">
+<div id="alphabetTable"></div>
+
   <!--<thead>
     <tr>
       <th>Type</th>
