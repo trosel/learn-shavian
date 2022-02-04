@@ -53,9 +53,51 @@
   </header>
   </div>
 
+<script>
+  fetch("./ShavianLetters.json")
+  .then((response) => {
+    return response.json();
+  })
+  .then((json) => {
+    buildTable(json);
+  });
+
+  function buildTable(data) {
+    var table = document.getElementById("alphabetTable");
+    var tableHTML = `<thead>
+        <tr>
+          <th>Type</th>
+          <th>Letter</th>
+          <th>IPA Sound</th>
+          <th>Name in Latin</th>
+          <th>Name in Shavian</th>
+          <th>Name in IPA</th>
+          <th>Audio</th>
+          <th>Frequency (1=highest)</th>
+        </tr>
+      </thead><tbody>`;
+    for (letter in data) {
+      tableHTML += `<tr class="item">
+          <td>${letter['Type']}</td>
+          <td>${letter}</td>
+          <td>${letter['IPA Sound']}</td>
+          <td>${letter['Name in Latin']}</td>
+          <td>${letter['Name in Shavian']}</td>
+          <td>${letter['Name in IPA']}</td>
+          <td><audio controls src="./audio/${letter['Name in Latin']}.mp3">Your browser does not support the <code>audio</code> element.</audio></td>
+          <td>14</td>
+        </tr>`;
+      console.log(letter);
+    }
+    tableHTML += "</tbody></table>";
+    table.innerHTML = tableHTML;  
+  }
+  
+</script>
+
 <h2 id="alphabet"><a href="#alphabet">Whole Alphabet Table<a></h2>
-<table class="sortable">
-  <thead>
+<table id="alphabetTable" class="sortable">
+  <!--<thead>
     <tr>
       <th>Type</th>
       <th>Letter</th>
@@ -500,7 +542,7 @@
       <td>34</td>
     </tr>
   </tbody>
-</table>
+</table>-->
   
 </body>
 </html>
