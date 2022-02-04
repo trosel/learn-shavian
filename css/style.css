@@ -1,12 +1,31 @@
 @font-face {
-    font-family: 'Henry Higgins Sans';
-    src: url('/fonts/HenryHigginsSans-Regular.woff2') format('woff2'),
-        url('/fonts/HenryHigginsSans-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Inter Alia';
+    font-style:  normal;
+    font-weight: 400;
     font-display: swap;
+    src: url("InterAlia-Regular.woff2?v=0.001") format("woff2");
 }
-
+@font-face {
+    font-family: 'Inter Alia';
+    font-style:  italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("InterAlia-Italic.woff2?v=0.001") format("woff2");
+}
+@font-face {
+    font-family: 'Inter Alia';
+    font-style:  normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("InterAlia-Bold.woff2?v=0.001") format("woff2");
+}
+@font-face {
+    font-family: 'Inter Alia';
+    font-style:  italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url("InterAlia-BoldItalic.woff2?v=0.001") format("woff2");
+}
 @font-face {
     font-family: 'Fairfax HD';
     src: url('/fonts/FairfaxHD.woff') format('woff');
@@ -16,7 +35,7 @@
 }
 
 :root {
-	--nc-font-sans: 'Henry Higgins Sans';
+	--nc-font-sans: 'Inter Alia';
     --nc-font-mono: 'Fairfax HD';
     --nc-ac-1: #9BDEB0;
 }
