@@ -78,12 +78,12 @@
       </thead><tbody>`;
     for (letter in data) {
       tableHTML += `<tr class="item">
-          <td>${letter['Type']}</td>
-          <td>${letter}</td>
-          <td>${letter['IPA Sound']}</td>
-          <td>${letter['Name in Latin']}</td>
-          <td>${letter['Name in Shavian']}</td>
-          <td>${letter['Name in IPA']}</td>
+          <td>${data[letter]['Type']}</td>
+          <td>${data[letter]}</td>
+          <td>${data[letter]['IPA Sound']}</td>
+          <td>${data[letter]['Name in Latin']}</td>
+          <td>${data[letter]['Name in Shavian']}</td>
+          <td>${data[letter]['Name in IPA']}</td>
           <td><audio controls src="./audio/${letter['Name in Latin']}.mp3">Your browser does not support the <code>audio</code> element.</audio></td>
           <td>14</td>
         </tr>`;
