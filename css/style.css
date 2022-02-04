@@ -3,28 +3,28 @@
     font-style:  normal;
     font-weight: 400;
     font-display: swap;
-    src: url("InterAlia-Regular.woff2?v=0.001") format("woff2");
+    src: url("InterAlia-Regular.woff?v=0.001") format("woff");
 }
 @font-face {
     font-family: 'Inter Alia';
     font-style:  italic;
     font-weight: 400;
     font-display: swap;
-    src: url("InterAlia-Italic.woff2?v=0.001") format("woff2");
+    src: url("InterAlia-Italic.woff?v=0.001") format("woff");
 }
 @font-face {
     font-family: 'Inter Alia';
     font-style:  normal;
     font-weight: 700;
     font-display: swap;
-    src: url("InterAlia-Bold.woff2?v=0.001") format("woff2");
+    src: url("InterAlia-Bold.woff?v=0.001") format("woff");
 }
 @font-face {
     font-family: 'Inter Alia';
     font-style:  italic;
     font-weight: 700;
     font-display: swap;
-    src: url("InterAlia-BoldItalic.woff2?v=0.001") format("woff2");
+    src: url("InterAlia-BoldItalic.woff?v=0.001") format("woff");
 }
 @font-face {
     font-family: 'Fairfax HD';
