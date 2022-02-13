@@ -74,7 +74,7 @@
           <td>${letter}</td>
           <td>${data[letter]['Name in Latin']}<br/>${data[letter]['Name in Shavian']}<br/>${data[letter]['Name in IPA']}</td>
           <td><audio controls src="./audio/${data[letter]['Name in Latin']}.mp3">Your browser does not support the <code>audio</code> element.</audio></td>
-          <td>14</td>
+          <td>${data[letter]['Frequency']}</td>
         </tr>`;
     }
     tableHTML += "</tbody></table>";
