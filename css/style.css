@@ -77,3 +77,8 @@ table {
 #definition h4 {
     color: var(--nc-bg-1);
 }
+
+summary {
+    cursor: pointer;
+    font-weight: 400;
+}
