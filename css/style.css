@@ -82,3 +82,7 @@ summary {
     cursor: pointer;
     font-weight: 400;
 }
+
+code {
+    font-size: 1.2em;
+}
