@@ -86,3 +86,7 @@ summary {
 code {
     font-size: 1.2em;
 }
+
+pre code {
+    font-size: 1.2em;
+}
