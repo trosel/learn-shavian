@@ -59,7 +59,7 @@
 
   function buildTable(data) {
     var table = document.getElementById("alphabetTable");
-    var tableHTML = `<table  class="sortable"><thead>
+    var tableHTML = `<table style="word-break: keep-all;" class="sortable"><thead>
         <tr>
           <th>Letter</th>
           <th>Name</th>
@@ -72,7 +72,6 @@
       </thead><tbody>`;
     for (letter in data) {
       tableHTML += `<tr class="item">
-          <td>${data[letter]['Type']}</td>
           <td>${letter}</td>
           <td>${data[letter]['Name in Latin']}<br/>${data[letter]['Name in Shavian']}</td>
           <td>${data[letter]['Sound in Traditional IPA']}<br/>${data[letter]['Name in Traditional IPA']}</td>
