@@ -61,13 +61,13 @@
     var table = document.getElementById("alphabetTable");
     var tableHTML = `<table  class="sortable"><thead>
         <tr>
-          <th>Type</th>
           <th>Letter</th>
           <th>Name</th>
           <th>IPA Traditional</th>
           <th>IPA Modern</th>
           <th>Pronunciation</th>
           <th>Frequency (1=highest)</th>
+          <th>Letter Type</th>
         </tr>
       </thead><tbody>`;
     for (letter in data) {
@@ -79,6 +79,7 @@
           <td>${data[letter]['Sound in Modern IPA']}<br/>${data[letter]['Name in Modern IPA']}</td>
           <td><audio controls src="./audio/${data[letter]['Name in Latin']}.mp3">Your browser does not support the <code>audio</code> element.</audio></td>
           <td>${data[letter]['Frequency']}</td>
+          <td>${data[letter]['Type']}</td>
         </tr>`;
     }
     tableHTML += "</tbody></table>";
